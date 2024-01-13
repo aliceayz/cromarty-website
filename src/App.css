@@ -1,0 +1,370 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9e9e9;
+  padding: 1rem;
+  margin: 10px;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-right: 1rem;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.navbar-right a {
+  color: black;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.navbar-right a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position:relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Set up the container */
+.background-container {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100px; /* Set the height of your scrolling div */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Define the scrolling background */
+.background-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 100%;
+  background-image: url('/Users/alicezhao/Code/courts/public/DD8D1FD3-C024-492C-A1F3-9AEF1C7173D1.PNG'); /* Replace with your image path */
+  background-size:contain;
+  background-repeat: repeat-x; /* Repeat the image horizontally */
+  animation: scrollBackground 100s linear infinite ; /* Adjust duration and timing function as needed */
+}
+
+
+
+/* Animation */
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.title, .text{
+  position: relative;
+}
+
+
+
+
+
+.first {
+  margin: 10px;
+  text-align:left;
+  padding-left: 50px;
+  padding-top: 350px;
+  padding-bottom: 100px;
+  background-image: url('/Users/alicezhao/Code/courts/public/369889315_786607109828090_802693394539179640_n.jpg');
+  color: white;
+  text-shadow: 3px 3px rgb(79, 79, 79);
+  background-position: center;
+  height: 200px;
+}
+
+.second {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #1e853a;
+  margin: 10px;
+  padding-top:150px;
+  padding-bottom:150px;
+  text-align:center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  line-height: 30px;
+}
+
+.subsecond {
+  width: 50%;
+}
+
+.second img {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.box {
+  flex: 1 0 50%; /* Two boxes in a row for 2x2 grid */
+  border-bottom: 10px;
+  border-left: 5px;
+  border-right: 5px;
+  border-color: #fff;
+  min-width: 50%; /* Ensure each box takes half of the container width */
+  height: 500px; /* Define the height of the boxes */
+  border-style:solid;
+  box-sizing: border-box; /*Include padding and borders in width calculation */
+  background-size: 110%;
+  transition: background-size 0.3s ease;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.one {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('/Users/alicezhao/Code/courts/public/370598527_788222162999918_3588097161251757760_n.jpg');
+}
+
+
+.two{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('/Users/alicezhao/Code/courts/public/370624047_788222209666580_2885027632997690645_n.jpg');
+}
+
+.three{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('/Users/alicezhao/Code/courts/public/369889315_786607109828090_802693394539179640_n.jpg');
+}
+
+.four{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('/Users/alicezhao/Code/courts/public/Screen-Shot-2023-09-12-at-2.25.55-PM-1024x645.png');
+}
+
+
+.box:hover {
+  background-size:120%;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  text-align:center;
+  width: 100%;
+  height: 490px;
+  background-color:#1e853a3e;
+  color: white;
+  text-shadow: 2px 2px rgb(94, 94, 94);
+  transition: background-color 0.3s ease; /* Optional: Adds a smooth transition effect */
+}
+
+.overlay:hover {
+  background-color:#1e853a92; /* Adjust the opacity value as needed */
+}
+
+
+/* Media query to change the layout for smaller screens */
+@media (max-width: 800px) {
+  .box {
+    flex: 1 0 100%; /* Display as 1x4 full width */
+    min-width: 100%; /* Take full width of the container */
+  }
+  .memberBody {
+    min-width: 100%; /* Take full width of the container */
+  }
+  .navbar{
+    justify-content: center;
+  }
+
+}
+
+
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.memberBody {
+  flex: 1;
+  background-color: #1e853a;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  box-sizing: border-box; /*Include padding and borders in width calculation */
+  border: 5px solid white;
+  border-top: 0px solid white;
+  padding: 10px;
+  height: 600px;
+}
+
+.courts {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #1e853a;
+  margin: 10px;
+  padding-top:100px;
+  padding-bottom:100px;
+  text-align:center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  line-height: 20px;
+}
+
+.socials {
+  display: flex;
+ justify-content:space-evenly;
+}
+
+.links:hover {
+  color: #1e853a;
+  fill: #1e853a;
+}
+
+.form-heading {
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.form-button:hover {
+  background-color: #3aa23f;
+}
+
+.historyHeader {
+  margin: 10px;
+  padding: 50px;
+  text-align:center;
+  background-image: url(/public/660px-1920s_Cromarty_Tennis_Club_Panorama.jpg);
+  background-size:cover;
+  height: 165px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px rgb(74, 74, 74);
+}
+
+.historyBody {
+  background-color: #1e853a;
+  margin: 10px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align:center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+.historyBody p {
+  font-family: sans-serif;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+}
+
+.subcontact {
+  height: 150px;
+  width: 200px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  color: black;
+}
+
+.info {
+  background-color:#1e853a;
+  padding: 10px;
+}
+
+.slideshow {
+  transition: 0.5s ease-in-out;
+}
+
+.success {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:#1e853a;
+  color: white;
+  text-align: center;
+}
