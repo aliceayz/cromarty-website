@@ -6,7 +6,7 @@ Built with JavaScript, React, Node.js and MongoDB, this website serves as the di
 Video Demo: https://youtu.be/cFZbcaU2ins
 
 ## Description
-Connected to a MongoDB databse of members information, using Node.JS it is able to verify information to retrive and display the up-to-date court code stored in MongoDB. As Cromarty is a small seasonal club, employees are not always present, this project provides a solution for members who have forgotten the court code and looking to access the club.
+Connected to a MongoDB databse of members information, using Node.JS it is able to verify information to retrive and display the up-to-date court code stored in the database. As Cromarty is a small seasonal club, employees are not always present, this project provides a solution for members who have forgotten the court code and looking to access the club.
 
 ## Key Features
 - **Security**: Utilizing MongoDB to store member and court code information.
